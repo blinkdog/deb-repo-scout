@@ -1,0 +1,35 @@
+{
+    "name": "deb-repo-scout",
+    "version": "0.0.1",
+    "description": "Investigate Debian repositories",
+    "keywords": [
+        "apt",
+        "deb",
+        "debian",
+        "devuan",
+        "package",
+        "repo",
+        "repository"
+    ],
+    "homepage": "https://github.com/blinkdog/dev-repo-scout",
+    "bugs": "https://github.com/blinkdog/dev-repo-scout/issues",
+    "license": "AGPL-3.0",
+    "author": "Patrick Meade <veloxi@ticon.net>",
+    "files": [
+        "LICENSE",
+        "README.md",
+        "lib",
+        "package.json"
+    ],
+    "main": "index",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/blinkdog/deb-repo-scout.git"
+    },
+    "devDependencies": {
+        "coffee-script": "1.12.7",
+        "istanbul": "0.4.5",
+        "mocha": "3.5.3",
+        "should": "13.1.0"
+    }
+}
