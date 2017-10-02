@@ -1,6 +1,6 @@
 {
     "name": "deb-repo-scout",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Investigate Debian repositories",
     "keywords": [
         "apt",
@@ -26,10 +26,16 @@
         "type": "git",
         "url": "https://github.com/blinkdog/deb-repo-scout.git"
     },
+    "dependencies": {
+        "express": "4.16.1",
+        "pug": "2.0.0-rc.4",
+        "stylus": "0.54.5"
+    },
     "devDependencies": {
         "coffee-script": "1.12.7",
         "istanbul": "0.4.5",
         "mocha": "3.5.3",
-        "should": "13.1.0"
+        "should": "13.1.0",
+        "supertest": "3.0.0"
     }
 }
