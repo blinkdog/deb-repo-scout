@@ -21,3 +21,13 @@ html
     title Debian Repository Scout
   body
     h1 Debian Repository Scout
+    if error
+      div
+        p(class="error")= error
+    div
+      form(action="/scout" method="POST")
+        div(class="sources-line")
+          input(class="long-line" type="text" name="sources")
+          input(class="short-button" type="submit" value="Submit")
+      p
+        span(class="code") deb http://security.ubuntu.com/ubuntu/ xenial-security main restricted universe multiverse

@@ -1,6 +1,6 @@
 {
     "name": "deb-repo-scout",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Investigate Debian repositories",
     "keywords": [
         "apt",
@@ -34,8 +34,8 @@
     "devDependencies": {
         "coffee-script": "1.12.7",
         "istanbul": "0.4.5",
-        "mocha": "3.5.3",
-        "should": "13.1.0",
+        "mocha": "4.0.1",
+        "should": "13.1.1",
         "supertest": "3.0.0"
     }
 }

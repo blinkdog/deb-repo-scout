@@ -49,5 +49,35 @@ describe "server", ->
       .expect 200
       .expect "Content-Type", /css/
 
+  describe "POST /scout (without body)", ->
+    it "should return an HTML report page", ->
+      request app
+      .post "/scout"
+      .set "Accept", "text/html"
+      .expect 200
+      .expect "Content-Type", /html/
+
+  describe "POST /scout (with nonsense)", ->
+    it "should return an HTML report page", ->
+      request app
+      .post "/scout"
+      .type "form"
+      .send
+        sources: "the quick brown fox jumps over the lazy dog"
+      .set "Accept", "text/html"
+      .expect 200
+      .expect "Content-Type", /html/
+
+  describe "POST /scout", ->
+    it "should return an HTML report page", ->
+      request app
+      .post "/scout"
+      .type "form"
+      .send
+        sources: "deb http://security.ubuntu.com/ubuntu/ xenial-security main restricted universe multiverse"
+      .set "Accept", "text/html"
+      .expect 200
+      .expect "Content-Type", /html/
+
 #----------------------------------------------------------------------
 # end of serverTest.coffee
